@@ -1,0 +1,26 @@
+/* universal selector */
+*{
+
+    color:blueviolet;
+    font-size: 30px;
+}
+
+/* tag / element selector */
+
+h1{
+
+    color: green;
+    text-align: center;
+    font-size: 50px;
+}
+
+/* attribute selector */
+
+a[title="google"]{
+
+    color :yellow;
+}
+
+a[title="facebook"]{
+
+    color: red;
