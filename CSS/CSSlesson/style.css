@@ -1,6 +1,124 @@
-h3{
-
-    color :blueviolet;
+h1{
+    color:blueviolet;
     text-align: center;
     font-size: 50px;
+}
+
+.borderone{
+    border:20px dotted red;
+
+}
+
+.bordertwo{
+
+    border-bottom: 5px solid red;
+    border-top: 2px dotted green;
+}
+
+.borderstyle{
+    border-style: solid dotted dashed double;
+
+}
+
+.bordercolor{
+    border-style: dashed solid dotted double;
+    border-color: blueviolet red green blue;
+} 
+
+.borderwidth{
+    border-style: solid dashed dotted d
+    uble;
+    border-width: 20px 15px 10px 5px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.margin{
+    border: 1px solid red;
+    margin:40px 20px 30px 10px;
+}
+
+.margintwo{
+    margin-top: 20px;
+    margin-left: 50px;
+    border: 1px solid green;
+}
+
+.padding{
+    border: 2px solid brown;
+    padding: 50px 25px 20px 10px;
+}
+
+.inline{
+    border: 3px solid black;
+    color: red;
+    /* display: block; */
+    /* chane inline to block */
+    display: inline-block;
+    width: 400px;
+   
+}
+
+.block{
+
+    border: 2px solid blue;
+    width: 400px;
+    display: inline-block;
+}
+
+.float_left img{
+
+    width: 40%;
+    float: left;
+}
+
+.clear{
+
+    clear: both;
+}
+
+.float_right img{
+
+    width: 40%;
+    float: right;
+}
+
+.gridone div , .gridcolumn div , .gridline div{
+
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.gridone{
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* grid-template-columns: 600px 300px auto; */
+}
+
+
+.gridcolumn{
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* grid-column-gap: 40px;
+    grid-row-gap: 50px; */
+    grid-gap: 50px;
+}
+
+.gridline{
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+
+.columnadd{
+
+    grid-column-start: 2;
+    grid-column-end: 4;
 }

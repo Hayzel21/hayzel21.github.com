@@ -59,8 +59,10 @@ a[title="facebook"]{
     text-decoration: none;
 }
 
+/* Pseudo Selector */
+
 a:link{
-    color:yellow;
+    color:rgb(9, 255, 0);
     text-decoration: double;
 }
 
@@ -70,10 +72,22 @@ a:hover{
 }
 
 a:active{
-    color:green;
+    color:yellow;
     text-decoration: line-through;
 }
 
 a:visited{
-    color:blue;
+    color:black;
+}
+
+/* target */
+
+div:target{
+    color: rgb(128, 66, 0);
+    border: 1px solid red;
+}
+
+p:target{
+    color:green ;
+    border : 10px solid blue;
 }
