@@ -132,6 +132,10 @@
 .promotion{
     display: grid;
     grid-template-columns: auto auto auto auto;
+    margin-left: 80px;
+    margin-right: 80px;
+    grid-gap: 30px;
+    position: relative;
 }
 
 
@@ -139,3 +143,314 @@
 
     width: 100%;
 }
+
+.promotion div {
+
+        border: 1px solid grey;
+        border-radius: 5px;
+
+}
+
+.promotion div p{
+
+    text-align: center;
+}
+
+.Discount{
+    position: relative;
+    bottom : 280px;
+    left: 60%;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+   width: 40%;
+}
+
+.origin{
+
+    position: relative;
+    bottom : 280px;
+    left: 30%;
+   color: red;
+   text-decoration: line-through;
+   font-size: 15px;
+}
+
+
+.new_arrival{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-left: 80px;
+    margin-right: 80px;
+    grid-gap: 30px;
+    position: relative;
+}
+
+.new_arrival div img{
+
+    width: 100%;
+}
+
+.new_arrival div {
+
+        border: 1px solid grey;
+        border-radius: 5px;
+
+}
+
+.new_arrival div p{
+
+    text-align: center;
+}
+
+
+
+.first_hr{
+    width: 50%;
+    display: inline-block;
+    border: 2px solid red;
+}
+
+
+.second_hr{
+    width: 50%;
+    display: inline-block;
+    border: 2px solid green;
+}
+
+.forhr{
+
+    display: flex;
+}
+
+.type{
+    float: left;
+    margin-left: 5%;
+}
+
+.price{
+    float: right;
+    margin-right: 5%;
+}
+
+.product_name{
+    margin-top: 10px;
+}
+
+
+
+.detail_btm{
+
+    position: absolute;
+    top: 18%;
+    left: 9%;
+    padding: 7px 15px;
+    border: 1px solid red;
+    color: red;
+    border-radius: 5px;
+    opacity: 0;
+
+}
+
+.detail_btm:hover{
+
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.new_arrival div:hover .detail_btm{
+    opacity: 0.8;
+
+}
+
+.image:hover{
+    opacity: 0.6;
+}
+
+
+/* subscribe */
+
+.subscribe{
+
+    background-color: red;
+    color: white;
+    margin-top: 50px;
+    height: 300px;
+}
+
+.subscribe div{
+
+    padding: 5%;
+    margin-left: 1%;
+    float: left;
+    width: 55%;
+}
+
+
+.subscribe div p{
+    margin: 30px 0px;
+}
+
+.sub_input{
+
+    width: 300px;
+    height: 40px;
+    outline: none;
+    border-radius: 5px 0px 0px 5px ;
+}
+
+.sub_button{
+
+    width: 100px;
+    height: 45px;
+    background-color: green;
+    outline: 0px;
+    border-radius: 0px 5px 5px 0px;
+    color: white;
+}
+
+
+.sub_img{
+
+    height: 175px;
+    margin-top: 6%;
+
+}
+
+.news{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 30px 80px 0px 80px;
+    grid-column-gap: 30px;
+
+
+    
+}
+
+.new_image{
+
+    width: 100%;
+    border: 5px 5px 0px 0px;
+    transition: .8s ease 1s;
+    /* property duration timing functtion delay */
+    /* ease-in : ease-out */
+
+}
+
+
+.new_title{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: red;
+    padding: 0px 20px 0px 10px;
+}
+
+.new_by{
+
+    font-style: italic;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 0px 20px 0px 10px;
+}
+
+.new_read{
+
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    color: red;
+    padding: 0px 20px 0px 10px;
+}
+
+.news div p{
+
+    padding: 0px 20px 0px 10px;
+}
+
+.news div{
+
+    border-radius: 5px;
+    border: 1px solid rgb(161, 126, 126);
+}
+
+
+.new_image:hover{
+
+    transform: scale(1.2);
+
+
+}
+
+.new_hover{
+    display: inline-block;
+    overflow: hidden;
+    height: 230px;
+}
+
+/* footer */
+
+footer{
+    margin-top: 50px;
+    background-color: black;
+    color: gray;
+}
+
+.footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: auto 200px 200px auto;
+    margin: 0px 80px;
+}
+
+.footer_title{
+
+    margin-bottom: 10px;
+}
+
+.footer_nav{
+
+    display: block;
+    color:gray ;
+    text-decoration: none;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+.footer_address{
+
+    margin-bottom: 10px;
+
+}
+
+.footer_icon{
+    display: inline-block;
+    margin-right: 7px;
+}
+
+.social{
+    color: gray;
+    margin: 5px 0px;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
