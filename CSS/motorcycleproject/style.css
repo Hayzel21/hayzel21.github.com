@@ -1,0 +1,365 @@
+@font-face {
+    font-family: one;
+    src: url("font/Teko-Bold.ttf");
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: one;
+    
+}
+
+
+/* for logo pic */
+.logo{
+    width: 70px;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+/* For link  */
+
+.nav_div{
+
+    /* float: left; */
+    display: inline-block;
+}
+
+.nav_ul{
+    float: right;
+}
+
+.nav_ul li{
+    display: inline-block;
+    margin-top: 40px;
+    margin-right: 40px;
+    
+}
+/* for underline  */
+.nav_ul li a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.nav_ul li a:hover{
+
+    color: goldenrod;
+}
+
+.all{
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 1);
+    /* background-color: blue; */
+    
+}
+
+
+/* Start HOME */
+
+.home{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.home_div{
+
+    position: absolute;
+    top: 160px;
+    left :350px;
+    color: goldenrod;
+    background-color: rgba(0, 0, 0, 0.696);
+    padding: 15px;
+}
+
+.home_div p{
+
+    margin: 10px 0px;
+}
+
+.home_button{
+
+    padding: 7.5px;
+    background-color: gold;
+    outline: 0pc;
+    border-radius: 8px;
+    border: none;
+}
+
+.home_button a{
+
+    color: black;
+    text-decoration: none;
+}
+
+/* Start type */
+
+.type{
+
+    width: 400px;
+    height: 400px;
+    margin-top: 10px;
+
+}
+
+.type_div{
+
+    border: 2px dashed gold;
+    margin-top: 20px;
+   background-color: gold; 
+   width: 400px;
+   -moz-box-align: center;
+}
+
+.type_div h1{
+
+    text-align: center;
+    color: grey;
+}
+
+.type_div p{
+
+    text-align: center;
+    color: grey;
+}
+
+.type_ul{
+
+    float: right;
+    margin-right: 450px;
+}
+
+.type_ul li{
+
+    display: block;
+    line-height: 27px;
+}
+
+.type_ul li a{
+
+
+    text-decoration: none;
+    color: black;
+    padding-left: 5px;
+}
+
+.type_ul li a:hover{
+
+    color: gold;
+    cursor: pointer;
+}
+
+/* Hot Products */
+
+.divided{
+    width: 150px;
+    margin-left: 480px;
+    border: 5px solid black;
+}
+
+.hot_one_div{
+
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    margin: 30px 80px 0px;
+}
+
+.hot_h1{
+    margin-top: 50px;
+    text-align: center;
+    color: goldenrod;
+    margin-bottom: opx;
+}
+
+.hot{
+
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 300px;
+    transition: .8s ease-in-out;
+
+}
+
+.hot:hover{
+
+    transform: scale(0.9);
+}
+
+.hot_p{
+
+    border: 3px solid black;
+    margin-top: 30px;
+    float: left;
+    padding: 15px 15px 15px 15px;
+    width: 650px;
+    height: 180px;
+    margin-left: 7px;
+}
+
+.hot_p span{
+
+    text-align: center;
+    color: black;
+    
+}
+
+
+.hot_span{
+
+    border: 1px solid lightblue;
+    background-color: rgb(99, 99, 168);
+    
+}
+
+.hot_small{
+
+    font-size: 30px;
+    color: goldenrod;
+    
+
+}
+
+.hot_button{
+
+    
+    outline: opx;
+    padding: 5px;
+    background-color: gold;
+    border-radius: 8px;
+    border: none;
+}
+
+.hot_button a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Start Footer */
+
+footer{
+
+    margin-top: 30px;
+    background-color: black;
+    color: antiquewhite;
+}
+
+.footer{
+
+    padding-top: 50px;
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: auto 200px 200px auto;
+    margin: 0px 80px;
+}
+
+.footer_one p{
+
+    margin-top: 4px;
+}
+
+.footer_nav{
+
+    display: block;
+    color: gray;
+    text-decoration: none;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+.footer_nav:hover{
+
+    color: gold;
+}
+
+.footer_address{
+    margin-bottom: 15px;
+    
+}
+
+.footer_icon{
+
+    margin-right: 2px;
+    display: inline-block;
+}
+
+.social{
+
+    
+    color: blue;
+    text-decoration: none;
+    cursor: grab;
+    
+}
+
+.social p{
+
+    margin-right: 1px;
+}
+
+.hr{
+
+    margin-bottom: 5px;
+}
+
+/*Form Action  */
+
+.body{
+
+    background-color: cornflowerblue ;
+}
+
+.h1{
+    margin-top: 4px;
+    color: white;
+    font-weight: 100;
+    text-align: center;
+}
+
+#form{
+
+    width: 50%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+
+input[type="text"],input[type="email"],input[type="number"]{
+
+    width: 100%;
+    height: 35px;
+    outline: none;
+}
+
+
+input[type="text"]:focus,input[type="email"]:focus,input[type="number"]:focus{
+
+    border: 4px solid gray;
+    color:goldenrod;
+}
+
+.log{
+
+    width: 100px;
+    height: 40px;
+    margin: auto;
+    background-color: black;
+    color: cornflowerblue;
+}
+
+.log_parent{
+
+    text-align: center;
+    margin-top: 10px;
+}
+
+.log a{
+
+    text-decoration: none;
+    color: cornflowerblue;
+}
