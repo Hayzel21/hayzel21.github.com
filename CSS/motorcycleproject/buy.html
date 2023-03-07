@@ -24,12 +24,80 @@
             <li><a href="index.html">HOME</a></li>
             <li><a href="product.html">PRODUCT</a></li>
             <li><a href="blog.html">BLOG</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
             <li><a href="promotion.html">PROMOTION</a></li>
             <li><a href="log.html">LOG IN</a></li>
             <li><a href="buy.html">BUY NOW</a></li>
         </ul>
     </nav>
+
+
+    <!-- Body -->
+
+    <div>
+
+        <h1 class="h2" >Sign up below and I will contact you.Thanks for buying.</h1>
+
+        <form action="#" method="post" id="form">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="" id="email"><br><br>
+
+
+            <label for="phone">Phone Number:</label>
+            <input type="number" name="" id="phone"><br><br>
+
+            <select name="town" id="town" class="select">
+
+                <option >Select Your Town</option>
+                <option value="kachin">KACHIN</option>
+                <option value="kayah">KAYAH</option>
+                <option value="kayin">KAYIN</option>
+                <option value="chin">CHIN</option>
+                <option value="mon">MON</option>
+                <option value="rakhine">RAKHINE</option>
+                <option value="shan">SHAN</option>
+                <option value="sagaing">SAGAING</option>
+                <option value="mandalay">MANDALAY</option>
+                <option value="magway">MAGWAY</option>
+                <option value="naypyitaw">NAY PYI TAW</option>
+                <option value="bago">BAGO</option>
+                <option value="yangon">YANGON</option>
+                <option value="ayeyawady">AYEYAWADY</option>
+                <option value="tanintharyi">TANINTHARYI</option>
+            </select><br><br><br>
+
+            <label for="pay">Choose what you want to pay with..
+
+                <br><br>
+                <input type="radio" name="pay" id="kpay">
+                <label for="kpay">Kpay</label>&nbsp;&nbsp;
+
+                <input type="radio" name="pay" id="wave">
+                <label for="wave">Wave Pay</label>&nbsp;&nbsp;
+
+                <input type="radio" name="pay" id="credit">
+                <label for="credit">Credit Card</label>&nbsp;&nbsp;
+
+                <input type="radio" name="pay" id="pal">
+                <label for="pal">PayPal</label>&nbsp;&nbsp;
+            </label>
+
+            <p class="buy_parent"><button type="submit" class="buy" onclick="result()">
+                Submit</button></p>
+        </form>
+
+        <script>
+                function result(){
+
+                    alert('Thank you for buying.Have a nice day!');
+                }
+            </script>
+
+
+    </div>
 
     <!-- Start Footer -->
 
@@ -51,7 +119,7 @@
             </div>
 
             <div>
-                <a href="contact.html" class="footer_nav">CONTACT</a>
+                
                 <a href="promotion.html" class="footer_nav">PROMOTION</a>
                 <a href="log.html" class="footer_nav">LOG IN</a>
                 <a href="buy.html" class="footer_nav">BUY Now</a>
