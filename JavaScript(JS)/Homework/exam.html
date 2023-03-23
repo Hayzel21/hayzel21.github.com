@@ -47,18 +47,81 @@
             let chemistry =document.myform.chemistry.value;
             let Phsysics =document.myform.phsy.value;
             let Biology = document.myform.bio.value;
+            let d = 0;
+            let subject =' ';
             // console.log(name,myanmar,english,math,chemistry,Phsysics,Biology);
 
 
             if (myanmar>=40 && english>=40 && math>=40 && chemistry>=40 && Phsysics>=40 && Biology>=40) {
-                
 
-                document.write(name + '<h1>is Pass</h1>')
-            } else {
+               if(myanmar >= 75 && english >= 75 && math >=  80 && chemistry >= 80 && Phsysics >= 80 && Biology>=80){
 
-                document.write(name + '<h1> is Fail</h1>')
-                
+                if(myanmar >= 75){
+
+                    d = d+1;
+                    subject = subject + 'myanmar';
+                }
+
+                d =d ;
+                subject =subject ;
+
+                if(english >=75){
+
+                    d= d+1;
+                    subject =subject+ 'english';
+                }
+
+                d =d ;
+                subject =subject ;
+
+                if(math >=75){
+
+                    d= d+1;
+                    subject =subject+ 'math';
+                }
+
+                d =d ;
+                subject =subject ;
+
+                if(chemistry >=75){
+
+                    d= d+1;
+                    subject =subject+ 'chemistry';
+                }
+
+                d =d ;
+                subject =subject ;
+
+                if(Phsysics >=75){
+
+                    d= d+1;
+                    subject =subject+ 'physics';
+                }
+
+                d =d ;
+                subject =subject ;
+
+                if(Biology >=75){
+
+                    d= d+1;
+                    subject =subject+ 'biology';
+
+                }
+
+                d = d;
+                subject = subject;
+
+
+                document.write('<h1>Congratulation</h1>' +name + "!You Pass with "+ d);
+            }else{
+
+                document.write("Pass")
             }
+            }
+             else {
+
+                document.write(name + '<h1> is Fail</h1>');
+             }
             
         }
     </script>

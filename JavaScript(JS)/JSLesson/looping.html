@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping</title>
+</head>
+<body>
+
+    <h1>Lopping</h1>
+    <hr>
+
+    <script>
+
+        // for Loop 
+
+      for(let i=1 ; i <= 10; i++){
+
+        document.write(`<h1> ${i} . Hello World</h1>`);
+      }
+
+      document.write('<hr>');
+
+      let fruit = ['Mango','Apple','Orange','Strawberry','Kiwi','Cherry','Banana'];
+
+      for(let j=0; j < fruit.length ; j++){
+
+        document.write(`<h1>${fruit[j]}</h1>`);
+      }
+
+      document.write('<hr>');
+
+      for(let k =1 ; k <=12 ; k++){
+
+        document.write(`<p>2 * ${k} = ${2*k}</p>`);
+      }
+
+      document.write('<hr>');
+
+      for (let p = 0; p <5 ; p++){
+
+        for (let h =0; h <=p ; h++){
+
+            document.write('*');
+        }
+
+        document.write('<br>');
+
+       
+      }
+
+      document.write('<hr>');
+
+
+    //   while loop
+
+    // let number = prompt("Enter a number:");
+
+    // while (number >= 100){
+
+    //     document.write(`<h1>Your number is ${number}</h1>`);
+    //     number -= 5;
+    // }
+
+
+    let num = 10;
+    do{
+        document.write(`Your Number is ${num}`);
+        document.write('<br>');
+        num += 2;
+    }while(num<20)
+    </script>
+    
+</body>
+</html>

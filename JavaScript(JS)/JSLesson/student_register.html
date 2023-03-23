@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Register</title>
+</head>
+<body>
+    <h1>Student Register</h1>
+
+    <form action="" name="myForm">
+        <label for="name">Name</label>
+        <input type="text" id ="name"  name="name"><br><br>
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age"><br><br>
+        <label for="city">City</label>
+        <input type="text" id ="city" name="city"><br><br>
+
+        <button type ="button" onclick="result()">Register</button>
+
+    </form><br><br>
+
+    <table border ='1' cellpadding = 15 cellspacing = 1 >
+        <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+
+
+    </table>
+
+    <script>
+         var studentArray = [];
+       function  result(){
+        
+        let name = document.myForm.name.value;
+        let age = document.myForm.age.value;
+        let city = document.myForm.city.value;
+
+        console.log(name , age ,city);
+
+
+        
+
+        let student_object ={
+
+            stu_name :name,
+            stu_age : age,
+            stu_city : city
+        }
+
+        console.log(student_object);
+
+
+       
+
+        studentArray.push(student_object);
+        console.log(studentArray);
+
+       }
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    
+
+    <h1>Function</h1>
+
+    <script>
+
+        // nameing function
+
+        function name() {
+
+            document.write('<h1>Hello Nameing Function</h1><br>')
+            
+        }
+        name();
+
+
+        // argument function (parameter function)
+
+        function sum(num1,num2) {
+            let result = num1 + num2;
+            document.write("Your Sum result is " + result +'<br>');
+            
+        }
+
+        sum (20,30);
+        sum(100,200);
+        sum(150,45);
+
+
+        // default argument function
+
+        function sub(num1 = 100,num2 =200) {
+
+            let result = num2 -num1;
+            document.write("Your Subtraction is" + result +'<br>');
+            
+        }
+
+        sub();
+        sub(500,700);
+
+
+        // return function
+
+        function multi(num1,num2) {
+
+            let result = num1 * num2;
+            return result;
+            
+        }
+
+       let total= multi(10,20);
+       
+       document.write("Your Multiplication is " + total +'<br>');
+    </script>
+</body>
+</html>
