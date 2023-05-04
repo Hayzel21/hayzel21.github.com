@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <style>
+
+        #animate{
+
+            max-width: 150px;
+            background-color: black;
+            color: red;
+            text-align: center;
+            padding: 50px 0;
+            position: relative;
+
+        }
+    </style>
+</head>
+<body>
+
+    <p id="animate">Animation</p>
+    <button id="start">Start</button>
+    
+
+
+    <script src="jquery.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+            $('#start').click(function(){
+
+                $('#animate').animate({left : '350px'},3000);
+                $('#animate').animate({top : '350px'}, 3000);
+                $('#animate').animate({left : '0px'},3000);
+                $('#animate').animate({top : '0px'},3000);
+
+            });
+        });
+    </script>
+</body>
+</html>

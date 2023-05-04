@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effect</title>
+</head>
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores cupiditate sed ipsum corporis ex, error nam reprehenderit soluta repellat a unde quo veritatis sunt, mollitia placeat velit adipisci, aliquam expedita!</p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+    <button id="fade_in">FadeIn</button>
+    <button id="fade_out">FadeOut</button>
+    <button id="fade_toggle">Fade Toggle</button>
+    <button id="fade_to">FadeTo</button>
+    <button id="fade_two">FadeTo Two</button>
+    
+
+    <script src="jquery.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+            $('#hide').click(function(){
+
+                $('p').hide(1000,function(){
+                    alert("p tag is hide.");
+                });
+            });
+
+
+            $('#show').click(function(){
+
+                $('p').show(1000);
+
+            });
+
+            $('#toggle').click(function(){
+
+                $('p').toggle('slow',function(){
+
+                    alert("This is used Toggle .")
+                });
+
+
+            });
+
+            $('#fade_in').click(function(){
+
+                $('p').fadeIn(3000);
+            });
+
+            $('#fade_out').click(function(){
+
+                $('p').fadeOut(3000);
+
+            });
+
+            $('#fade_toggle').click(function(){
+
+                $('p').fadeToggle(3000,function(){
+                    alert("This is fade toggle.")
+
+                });
+
+
+            });
+
+
+            $('#fade_to').click(function(){
+
+                $('p').fadeTo('slow',0.2,function(){
+
+                    alert("This is Fade To.")
+                });
+            });
+
+
+            $('#fade_two').click(function(){
+
+                $('p').fadeTo('slow',1,function(){
+
+                    alert("This is like original.")
+                });
+            });
+
+
+        });
+    </script>
+</body>
+</html>

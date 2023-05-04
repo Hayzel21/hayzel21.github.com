@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Action</title>
+    <style>
+
+        .home{
+
+            max-width: 200px;
+            background-color: green;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <p id ="click">I want to meet my friends.</p>
+
+    <button id ="add_class">Add Click</button>
+
+    <button id ="remove_class">Remove Class</button>
+
+
+    <script src="jquery.min.js"></script>
+
+    <script>
+
+        $(Document).ready(function(){
+
+            $('#add_class').click(function(){
+                $('p').addClass('home');
+            });
+
+            
+            $('#remove_class').click(function(){
+                $('p').removeClass('home');
+            });
+
+            $('#remove_class').click(function(){
+                $('p').removeClass('home');
+            })
+
+        })
+    </script>
+</body>
+</html>

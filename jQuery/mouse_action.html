@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Action</title>
+
+    <style>
+
+        .welcome{
+
+            max-width: 250px;
+            background-color: blue;
+            color: whitesmoke;
+            text-align: center;
+            padding: 50px 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="plant">Welcome to my little garden.</p>
+    Name: <input type="text" id="name" name="name">
+    
+
+    <script src="jquery.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+            $('#plant').mouseover(function(){
+
+                $(this).addClass('welcome');
+
+
+            });
+
+            $('#plant').mouseout(function(){
+
+                $(this).removeClass('welcome');
+
+            });
+
+            $('#name').focus(function(){
+
+                $(this).css('background-color','red');
+
+
+            });
+
+        });
+    </script>
+</body>
+</html>

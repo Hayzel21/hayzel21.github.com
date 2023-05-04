@@ -1,0 +1,31 @@
+@font-face {
+    font-family: one ;
+    src: url("../Font/FjallaOne.ttf");
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: one;
+}
+
+.all{
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 1);
+    /* background-color: blue; */
+    
+}
+
+.nav{
+    display: inline-block;
+   margin-top: 0px;
+   margin-right: 5px;
+    
+}
+
+.nav{
+
+    float: right;
+}
+
+

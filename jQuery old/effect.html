@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effect</title>
+</head>
+<body>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, et. Beatae libero sequi, voluptate veritatis minima nemo qui temporibus magnam, earum odit obcaecati. Atque dolor similique quod harum ducimus, fugiat, asperiores nemo obcaecati temporibus voluptatem fuga eaque quo deserunt odit enim! Atque ex sequi nobis magnam minus? Quis doloremque illum saepe nobis ad quidem alias ex tenetur pariatur? Voluptas soluta aperiam aut voluptates voluptatibus consequuntur tenetur exercitationem ab, vel suscipit reiciendis illum sit totam provident? Natus fugit et tempora incidunt, hic porro quaerat aut! Quasi odio dolores laudantium autem, illum laboriosam quisquam nobis reiciendis minima adipisci iure, facilis ullam commodi! Facilis veniam tenetur suscipit nesciunt soluta nemo a sunt exercitationem dolorem, tempore ea quidem aliquam eveniet perferendis odit deserunt. Nulla recusandae quis perferendis fugiat temporibus sapiente eius deserunt asperiores dicta, voluptatibus necessitatibus aperiam natus consequuntur rerum, exercitationem qui reiciendis ea quo soluta facilis, quibusdam magni ipsum pariatur quasi! Earum molestiae quas praesentium aliquam facilis. Architecto saepe nobis asperiores ipsum eaque, deserunt repudiandae mollitia non a, molestiae amet illum! Unde, dolores accusantium cupiditate enim nemo non! Ad eos alias tempore dicta exercitationem nisi expedita tenetur ipsam eum animi, quisquam repellat praesentium aut explicabo aspernatur, aliquam tempora in quasi culpa cumque reiciendis quod corporis. Temporibus, dolore eaque repudiandae ea debitis ad reiciendis autem voluptates laborum culpa sed, veniam minus, natus reprehenderit dicta maiores. Laudantium beatae fugit molestiae ipsam consequatur, facilis quaerat unde odit nulla deserunt molestias atque facere, aspernatur vel corporis optio. Cupiditate quo assumenda vel doloremque quasi aspernatur dignissimos iusto. Sint pariatur deleniti quam suscipit saepe earum necessitatibus sit officia, amet ratione mollitia reiciendis delectus eaque perferendis veniam fugiat rem voluptates aliquam explicabo provident. Repudiandae, aperiam. Tempore incidunt omnis, laborum pariatur deserunt eius obcaecati perspiciatis. Cupiditate, blanditiis aliquid quas odit, vitae nisi praesentium itaque rerum ipsa possimus perferendis maxime inventore saepe.</p>
+    
+    <button id ="hide">Hide</button>
+    <button id ="show">Show</button>
+    <button id ="toggle">Toggle</button>
+    <button id ="fadein">fadeIn</button>
+    <button id = "fadeout">fadeOut</button>
+    <button id = "fadetoggle">fadeToggle</button>
+    <button id ="fadeto">fadeTo</button>
+    <button id ="fadeto2">fadeTo2</button>
+    
+    <script src ="jquery.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+            $('#hide').click(function(){
+
+                $('p').hide(1000,function(){
+                    alert("p tag is hide.");
+                });
+            })
+
+            $('#show').click(function(){
+                $('p').show(1000);
+            })
+
+            $('#toggle').click(function(){
+
+                $('p').toggle(1000);
+            })
+
+            $('#fadein').click(function(){
+
+                $('p').fadeIn('slow');
+            });
+
+
+            $('#fadeout').click(function(){
+
+                $('p').fadeOut('slow');
+            });
+
+            $('#fadetoggle').click(function(){
+
+                $('p').fadeToggle(1000);
+            });
+
+            $('#fadeto').click(function(){
+
+                $('p').fadeTo('slow',0.1);
+            });
+
+
+            $('#fadeto2').click(function(){
+
+                $('p').fadeTo('slow',1);
+            })
+
+    })
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Register</title>
+</head>
+<body>
+
+    <h3>Add New Student</h3>
+
+    <div id="addstudent">
+
+    Name: <input type="text" name="name" id="name"><br><br>
+    Email: <input type="email" name="email" id="email"><br><br>
+    Phone Number : <input type="number" name="number" id="number"><br><br>
+
+    Year: <select name="year" id="year">
+
+        <option value="">Choose Year</option>
+        <option value="First Year">First Year</option>
+        <option value="Second Year">Second Year</option>
+        <option value="Third Year">Third Year</option>
+    </select><br><br>
+
+
+    <button id="add" >Add Student</button>
+
+</div>
+
+
+<h3>Student Lists</h3>
+
+<table border="1" cellspacing="0" cellpadding="25">
+
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Year</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Mg Mg</td>
+            <td>mgmg215@gmail.com</td>
+            <td>09954671977</td>
+            <td>First Year</td>
+        </tr>
+    </tbody>
+</table>
+
+
+    
+    <script src="jquery.min.js"></script>
+
+    <script>
+        
+        $(document).ready(function(){
+
+                $('#add').click(function(){
+
+                    let name = $('#name').val();
+                    let email =$('#email').val();
+                    let number =$('#number').val();
+                    let year =$('#year').val();
+
+
+                    console.log(name, email, number, year);
+
+
+                });
+
+        });
+    </script>
+</body>
+</html>

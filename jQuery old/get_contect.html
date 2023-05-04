@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contect</title>
+</head>
+<body>
+
+    <h3>Today is <i>Tuesday.</i>We learn everything. When we <i>start</i> do something,we get <i>win</i></h3>
+    <p id ="contect_one"></p>
+    <p id="contect_two"></p>
+    <h2></h2>
+
+    <button id="click">Click</button>
+    <script src="jquery-3.6.4.min.js"></script>
+
+    <script>
+
+        $document.ready(function(){
+
+            $('#click').click(function(){
+                let get_text = $('h3').text();
+                alert(get_text);
+                console.log(get_text);
+
+                let get_html = $ ('h3').html();
+                alret(get_html);
+                console.log(get_html);
+            });
+
+
+        });
+    </script>
+</body>
+</html>
