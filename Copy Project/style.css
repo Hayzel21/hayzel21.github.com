@@ -176,10 +176,54 @@
     text-decoration: none;
     color: whitesmoke;
     display: block;
+    font-size: larger !important;
     
 }
 
 .foot:hover{
 
     color: gold;
+}
+
+
+/* Cuisines */
+
+.cus{
+
+    width: 100%;
+    height: 50%
+}
+
+/* local foods */
+
+.bur{
+
+    width: 100%;
+    height: 50%;
+}
+
+.kac{
+
+    width: 400px;
+    height: 300px;
+}
+
+.kay{
+
+    width: 600px;
+    height: 350px;
+    padding-left: 200px;
+}
+
+.rak{
+
+    width: 400px;
+    height: 200px;
+}
+
+
+.shan{
+
+    width: 100%;
+    height: 200px;
 }
